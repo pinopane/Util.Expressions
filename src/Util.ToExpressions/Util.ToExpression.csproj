@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Copyright></Copyright>
+    <Authors>Daniel Pino.</Authors>
+    <Company></Company>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>\bin\Release\bin\Debug\netcoreapp2.2\Util.ToExpression.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>\bin\Release\netcoreapp2.2\Util.ToExpression.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Common.Domain" Version="1.1.0-CI-20190605-103542" />
+    <PackageReference Include="Common.Infrastructure.CosmosDB" Version="1.1.0-CI-20190605-103542" />
+  </ItemGroup>
+
+</Project>
